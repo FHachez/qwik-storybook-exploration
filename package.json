@@ -17,14 +17,25 @@
     "lint": "eslint \"src/**/*.ts*\"",
     "release": "np",
     "start": "npm run dev",
-    "typecheck": "tsc --incremental --noEmit"
+    "typecheck": "tsc --incremental --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
     "@builder.io/qwik": "0.0.38",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-vite": "^0.2.0",
+    "@storybook/html": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/eslint": "8.4.5",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.30.6",
     "@typescript-eslint/parser": "5.30.6",
+    "babel-loader": "^8.2.5",
     "eslint": "8.20.0",
     "eslint-plugin-qwik": "0.0.38",
     "node-fetch": "3.2.8",
@@ -52,5 +63,6 @@
   "private": false,
   "qwik": "./lib/index.qwik.mjs",
   "type": "module",
-  "types": "./lib/types/index.d.ts"
+  "types": "./lib/types/index.d.ts",
+  "dependencies": {}
 }
