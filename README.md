@@ -1,5 +1,9 @@
-# Qwik qwik-storybook-exploration ⚡️
+# Qwik qwik-storybook-exploration ⚡️
+The goal is to get qwik to work with storybook.
 
+To start the storybook use `npm run storybook`. This repos currently explore whether we can render qwik in the browser or whether we should go for the [SSR route](https://www.npmjs.com/package/@storybook/server).
+
+# Qwik setup
 - Create a component library
 - Vite.js tooling.
 - Prettier code formatter.
